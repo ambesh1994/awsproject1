@@ -11,7 +11,7 @@ pipeline
       steps
       {
         sh '''
-        yum install docker -y
+        yum install docker -y || exit 0
         
         '''
       }  
@@ -32,7 +32,7 @@ pipeline
       steps
       {
         sh '''
-        docker rm -f aws | exit 0
+        docker rm -f aws || exit 0
         docker run -d -p 80:80 --name aws aws
         '''
       }  
