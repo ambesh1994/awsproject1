@@ -12,6 +12,7 @@ pipeline
       {
         sh '''
         yum install docker -y
+        yum install git -y
         '''
       }  
     }
