@@ -15,8 +15,7 @@ pipeline
         '''
       }  
     }
-  
-  stages 
+   
   {
     stage ("build image")
     {
