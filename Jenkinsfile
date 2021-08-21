@@ -23,7 +23,7 @@ pipeline
       steps
       {
         sh '''
-        build -t aws -f aws.dockerfile .
+        docker build -t aws -f aws.dockerfile .
         '''
       }  
     }
